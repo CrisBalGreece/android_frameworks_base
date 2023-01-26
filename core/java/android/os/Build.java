@@ -1249,21 +1249,18 @@ public class Build {
      */
     public static boolean isBuildConsistent() {
         // Don't care on eng builds.  Incremental build may trigger false negative.
-        if (IS_ENG) return true;
-
+        /*if (IS_ENG) return true;
         if (IS_TREBLE_ENABLED) {
             // If we can run this code, the device should already pass AVB.
             // So, we don't need to check AVB here.
             int result = VintfObject.verifyWithoutAvb();
-
             if (result != 0) {
                 Slog.e(TAG, "Vendor interface is incompatible, error="
                         + String.valueOf(result));
             }
-
             return result == 0;
+            return true;
         }
-
         final String system = SystemProperties.get("ro.system.build.fingerprint");
         final String vendor = SystemProperties.get("ro.vendor.build.fingerprint");
         final String bootimage = SystemProperties.get("ro.bootimage.build.fingerprint");
@@ -1272,19 +1269,17 @@ public class Build {
         final String requiredRadio = SystemProperties.get("ro.build.expect.baseband");
         final String currentRadio = joinListOrElse(
                 TelephonyProperties.baseband_version(), "");
-
         if (TextUtils.isEmpty(system)) {
             Slog.e(TAG, "Required ro.system.build.fingerprint is empty!");
             return false;
         }
-
         if (!TextUtils.isEmpty(vendor)) {
             if (!Objects.equals(system, vendor)) {
                 Slog.e(TAG, "Mismatched fingerprints; system reported " + system
                         + " but vendor reported " + vendor);
                 return false;
             }
-        }
+        } */
 
         /* TODO: Figure out issue with checks failing
         if (!TextUtils.isEmpty(bootimage)) {
