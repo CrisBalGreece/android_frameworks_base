@@ -166,8 +166,8 @@ public class PixelPropsUtils {
         propsToChangePixel7Pro.put("PRODUCT", "cheetah");
         propsToChangePixel7Pro.put("HARDWARE", "cheetah");
         propsToChangePixel7Pro.put("MODEL", "Pixel 7 Pro");
-        propsToChangePixel7Pro.put("ID", "TQ3A.230805.001");
-        propsToChangePixel7Pro.put("FINGERPRINT", "google/cheetah/cheetah:13/TQ3A.230805.001/10316531:user/release-keys");
+        propsToChangePixel7Pro.put("ID", "UQ1A.240105.004");
+        propsToChangePixel7Pro.put("FINGERPRINT", "google/cheetah/cheetah:14/UQ1A.240105.004/11206848:user/release-keys");
         propsToChangePixel5 = new HashMap<>();
         propsToChangePixel5.put("BRAND", "google");
         propsToChangePixel5.put("MANUFACTURER", "Google");
@@ -175,8 +175,8 @@ public class PixelPropsUtils {
         propsToChangePixel5.put("PRODUCT", "redfin");
         propsToChangePixel5.put("HARDWARE", "redfin");
         propsToChangePixel5.put("MODEL", "Pixel 5");
-        propsToChangePixel5.put("ID", "TQ3A.230805.001");
-        propsToChangePixel5.put("FINGERPRINT", "google/redfin/redfin:13/TQ3A.230805.001/10316531:user/release-keys");
+        propsToChangePixel5.put("ID", "UP1A.231105.001");
+        propsToChangePixel5.put("FINGERPRINT", "google/redfin/redfin:14/UP1A.231105.001/10817346:user/release-keys");
         propsToChangePixel2 = new HashMap<>();
         propsToChangePixel2.put("BRAND", "google");
         propsToChangePixel2.put("MANUFACTURER", "Google");
