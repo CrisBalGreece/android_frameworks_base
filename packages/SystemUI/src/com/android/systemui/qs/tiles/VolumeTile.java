@@ -89,7 +89,7 @@ public class VolumeTile extends QSTileImpl<BooleanState> {
 
     @Override
     public int getMetricsCategory() {
-        return MetricsEvent.QS_VOLUME;
+        return MetricsEvent.QS_LEGION;
     }
 
     @Override
