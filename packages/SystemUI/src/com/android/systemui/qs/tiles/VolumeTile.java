@@ -18,6 +18,8 @@
 
 package com.android.systemui.qs.tiles;
 
+import static com.android.internal.logging.MetricsLogger.VIEW_UNKNOWN;
+
 import android.content.Context;
 import android.content.Intent;
 import android.os.Handler;
@@ -89,7 +91,7 @@ public class VolumeTile extends QSTileImpl<BooleanState> {
 
     @Override
     public int getMetricsCategory() {
-        return MetricsEvent.QS_LEGION;
+        return VIEW_UNKNOWN;
     }
 
     @Override
