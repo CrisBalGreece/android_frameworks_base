@@ -227,18 +227,17 @@ public class PixelPropsUtils {
                     Log.e(TAG, "Failed to register task stack listener!", e);
                 }
                 if (was) return true;
-                // Alter build parameters to pixel 2 for avoiding hardware attestation enforcement
-                setPropValue("BRAND", "google");
-                setPropValue("PRODUCT", "walleye");
-                setPropValue("MODEL", "Pixel 2");
-                setPropValue("MANUFACTURER", "Google");
-                setPropValue("DEVICE", "walleye");
-                setPropValue("FINGERPRINT", "google/walleye/walleye:8.1.0/OPM1.171019.011/4448085:user/release-keys");
-                setPropValue("ID", "OPM1.171019.011");
-                setPropValue("TYPE", "user");
-                setPropValue("TAGS", "release-keys");
-                setVersionField("DEVICE_INITIAL_SDK_INT", Build.VERSION_CODES.O_MR1);
-                setVersionFieldString("SECURITY_PATCH", "2017-12-05");
+
+                dlog("Spoofing build for GMS");
+                // Alter build parameters to avoid hardware attestation enforcement
+                setBuildField("BRAND", "motorola");
+                setBuildField("MANUFACTURER", "motorola");
+                setBuildField("DEVICE", "griffin");
+                setBuildField("ID", "MCC24.246-37");
+                setBuildField("FINGERPRINT", "motorola/griffin_retcn/griffin:6.0.1/MCC24.246-37/42:user/release-keys");
+                setBuildField("MODEL", "XT1650-05");
+                setBuildField("PRODUCT", "griffin_retcn");
+                setVersionFieldString("SECURITY_PATCH", "2016-07-01");
                 return true;
             }
         }
