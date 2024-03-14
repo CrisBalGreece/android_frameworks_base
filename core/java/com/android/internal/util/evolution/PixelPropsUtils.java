@@ -230,13 +230,15 @@ public class PixelPropsUtils {
 
                 dlog("Spoofing build for GMS");
                 // Alter build parameters to avoid hardware attestation enforcement
-                setBuildField("BRAND", "motorola");
-                setBuildField("MANUFACTURER", "motorola");
-                setBuildField("DEVICE", "griffin");
-                setBuildField("ID", "MCC24.246-37");
-                setBuildField("FINGERPRINT", "motorola/griffin_retcn/griffin:6.0.1/MCC24.246-37/42:user/release-keys");
-                setBuildField("MODEL", "XT1650-05");
-                setBuildField("PRODUCT", "griffin_retcn");
+                setPropValue("BRAND", "motorola");
+                setPropValue("MANUFACTURER", "motorola");
+                setPropValue("DEVICE", "griffin");
+                setPropValue("ID", "MCC24.246-37");
+                setPropValue("FINGERPRINT", "motorola/griffin_retcn/griffin:6.0.1/MCC24.246-37/42:user/release-keys");
+                setPropValue("MODEL", "XT1650-05");
+                setPropValue("PRODUCT", "griffin_retcn");
+                setPropValue("TYPE", "user");
+                setPropValue("TAGS", "release-keys");
                 setVersionFieldString("SECURITY_PATCH", "2016-07-01");
                 return true;
             }
