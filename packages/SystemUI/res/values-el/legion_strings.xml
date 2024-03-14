@@ -99,5 +99,8 @@
 
     <!-- Όνομα του εικονιδίου γραμματοκαθαρτή VoWiFi. -->
     <string name="status_bar_vowifi">Κλήση Wi-Fi (VoWiFi)</string>
+	
+    <!-- Volume panel QS tile -->
+    <string name="quick_settings_volume_panel_label">Πίνακας έντασης</string>
 
 </resources>

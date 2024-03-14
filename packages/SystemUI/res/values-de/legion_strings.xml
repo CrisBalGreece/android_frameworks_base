@@ -99,5 +99,8 @@
 
     <!-- Name des VoWiFi-Statusleistensymbols -->
     <string name="status_bar_vowifi">Wi-Fi-Anruf (VoWiFi)</string>
+	
+    <!-- Volume panel QS tile -->
+    <string name="quick_settings_volume_panel_label">Lautstärke-Panel</string>
 
 </resources>

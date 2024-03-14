@@ -101,4 +101,7 @@
 <!-- Name of the VoWiFi status bar icon. -->
 <string name="status_bar_vowifi">Llamadas Wi-Fi (VoWiFi)</string>
 
+<!-- Volume panel QS tile -->
+<string name="quick_settings_volume_panel_label">Panel de volumen</string>
+
 </resources>
